@@ -8,7 +8,7 @@ In the Colorado Board of Elections; Tom, a employee in an eleciton auidt of the 
   From this congressional election, there were 369,711 votes in total.
 
 - ###### Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
-  !(County Votes)[]
+  !(County Votes)[https://github.com/hayden0098/Election_Analysis/blob/main/analysis/Screenshot%20image/County%20Votes.jpg]
 
   From the analysis of the data, the image have show us the number of votes and the percentage of total votes for each county in the precinct. Jefferson has the 10.51% of the     total vote which is 38,855 votes; Denver has the 82.78% of the total vote which is 306,055 votes; Arapahoe has the 6.71% of the total vote which is 24,801 votes.
 
