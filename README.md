@@ -8,7 +8,7 @@ In the Colorado Board of Elections; Tom, a employee in an eleciton auidt of the 
   From this congressional election, there were 369,711 votes in total.
 
 - ###### Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
-  !(County Votes)[https://github.com/hayden0098/Election_Analysis/blob/main/analysis/Screenshot%20image/County%20Votes.jpg]
+  ![County Votes](https://github.com/hayden0098/Election_Analysis/blob/main/analysis/Screenshot%20image/County%20Votes.jpg)
 
   From the analysis of the data, the image have show us the number of votes and the percentage of total votes for each county in the precinct. Jefferson has the 10.51% of the     total vote which is 38,855 votes; Denver has the 82.78% of the total vote which is 306,055 votes; Arapahoe has the 6.71% of the total vote which is 24,801 votes.
 
@@ -16,7 +16,7 @@ In the Colorado Board of Elections; Tom, a employee in an eleciton auidt of the 
   Denver is the county who carry the largest number of votes, since the 82.78% of the total vote which is 306,055 votes is the highest number of count compare than the others.
 
 - ###### Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
-  !(Candidate Votes)[]
+  ![Candidate Votes](https://github.com/hayden0098/Election_Analysis/blob/main/analysis/Screenshot%20image/Candidate%20Votes.jpg)
 
   From the analysis of the data, the image have show us the number of votes and the percentage of total votes for each candidate. Charles Casper Stockham received 85,213 votes     that are 23% of the total votes; Diana DeGette received 272,892 votes that are 73.8% of the total votes; Raymon Anthony Doane received 11,606 votes that are 3.1% of the total   votes.
 
@@ -26,11 +26,15 @@ In the Colorado Board of Elections; Tom, a employee in an eleciton auidt of the 
 ## Election Audit Summary:
 As a automatical process Python script, it's suitable to use in election commission to get the result for any election with some modifacations are needed. 
 
-1. After the statement that open the loaded file, inside the loop that used to read every rows of the file. the number of column in CSV file that indicate candidate name and county name may not be the same in every election based on the file that generated, so this would be the small modification is require to be done. 
+1. ![modification needed 01](https://github.com/hayden0098/Election_Analysis/blob/main/analysis/Screenshot%20image/modification%20needed%2001.jpg)
+
+After the statement that open the loaded file, inside the loop that used to read every rows of the file. the number of column in CSV file that indicate candidate name and county name may not be the same in every election based on the file that generated, so this would be the small modification is require to be done. 
 
   for example: candidate_name = row[number] 
                 county_name = row[number] where number = 0 ~ (column # - 1 )
 
-2. While setting the variable that want to load or save the file from a path, in side the os.path.join() statement filename variable and direct path in this case is name "election_results.csv" that in the path that folder name "Resources". In other case, the file name that has beed provided may not be the same in each election. Also the direct path would be different which mean the data file may not be in the same folder as the last time. Therefore inspection and modifications the path will be neccessary for every time using this script, and make the change as needed.
+2. ![modification needed 02](https://github.com/hayden0098/Election_Analysis/blob/main/analysis/Screenshot%20image/modification%20needed%2002.jpg)
+
+While setting the variable that want to load or save the file from a path, in side the os.path.join() statement filename variable and direct path in this case is name "election_results.csv" that in the path that folder name "Resources". In other case, the file name that has beed provided may not be the same in each election. Also the direct path would be different which mean the data file may not be in the same folder as the last time. Therefore inspection and modifications the path will be neccessary for every time using this script, and make the change as needed.
 
   for example: os.path.join("folder name","file name"); ".." can be added infront of
